@@ -1,0 +1,168 @@
+
+.about-container {
+    width: 100%;
+  }
+  
+  .about-hero {
+    background: linear-gradient(to right, #4361ee, #7209b7);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+  }
+  
+  .about-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .section-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .section-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .section-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+  }
+  
+  .section-text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #4a5568;
+  }
+  
+  .section-text ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: #4a5568;
+  }
+  
+  .section-text ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+  }
+  
+  .section-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+  }
+  
+  .section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-cta {
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+  }
+  
+  .about-cta h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-cta p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+  }
+  
+  .about-cta .cta-button {
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+  }
+  
+  .about-cta .cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 992px) {
+    .about-hero {
+      padding: 4rem 1.5rem;
+    }
+    
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .about-section {
+      margin-bottom: 3rem;
+    }
+    
+    .section-text h2 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero h1 {
+      font-size: 2rem;
+    }
+    
+    .about-section {
+      flex-direction: column;
+    }
+    
+    .about-section.reverse {
+      flex-direction: column;
+    }
+    
+    .section-text {
+      order: 2;
+    }
+    
+    .section-image {
+      order: 1;
+      margin-bottom: 1.5rem;
+    }
+  }
